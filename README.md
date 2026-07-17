@@ -6,7 +6,7 @@ The website was initially generated with the assistance of AI and then customize
 
 ## 🚀 Live Demo
 
-Coming soon...
+https://nazanin-portfolio.nghobadi.workers.dev/
 
 ## ✨ Features
 

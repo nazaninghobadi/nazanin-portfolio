@@ -14,13 +14,19 @@ export default function Hero() {
     <section id="top" className="relative pt-20 pb-28 md:pt-48 md:pb-36">
       <div className="mx-auto max-w-6xl px-6 grid lg:grid-cols-[1.1fr_0.9fr] items-center gap-16">
         <div>
-          <div className="md:hidden flex justify-center mt-2 mb-10">
-            <img
-              src="/images/profilee.png"
-              alt="Nazanin Ghobadi"
-              className="h-28 w-28 rounded-full object-cover object-top border-2 border-gold-dim/60 shadow-lg"
-            />
-          </div>
+      <div className="md:hidden flex justify-center mt-2 mb-10">
+        <div
+          role="img"
+          aria-label="Nazanin Ghobadi"
+          className="h-28 w-28 rounded-full border-2 border-gold-dim/60 shadow-lg"
+          style={{
+          backgroundImage: 'url(/images/profilee.png)',
+          backgroundSize: '120% auto',
+          backgroundPosition: '72% 0.02%',
+          backgroundRepeat: 'no-repeat',
+          }}
+         />
+        </div>
           <motion.p
             initial="hidden"
             animate="show"
