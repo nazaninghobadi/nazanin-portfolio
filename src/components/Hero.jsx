@@ -11,9 +11,16 @@ const fadeUp = {
 
 export default function Hero() {
   return (
-    <section id="top" className="relative pt-40 pb-28 md:pt-48 md:pb-36">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="top" className="relative pt-20 pb-28 md:pt-48 md:pb-36">
+      <div className="mx-auto max-w-6xl px-6 grid lg:grid-cols-[1.1fr_0.9fr] items-center gap-16">
         <div>
+          <div className="md:hidden flex justify-center mt-2 mb-10">
+            <img
+              src="/images/profilee.png"
+              alt="Nazanin Ghobadi"
+              className="h-28 w-28 rounded-full object-cover object-top border-2 border-gold-dim/60 shadow-lg"
+            />
+          </div>
           <motion.p
             initial="hidden"
             animate="show"
@@ -79,7 +86,26 @@ export default function Hero() {
             </a>
           </motion.div>
         </div>
-
+        <motion.div
+        initial={{ opacity: 0, scale: 0.96 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.9, ease: 'easeOut', delay: 0.3 }}
+        className="relative hidden md:flex justify-center lg:justify-end"
+        >
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 m-auto h-[85%] w-[85%] rounded-full blur-3xl opacity-30"
+            style={{
+              background:
+                'radial-gradient(circle, var(--color-gold) 0%, var(--color-teal) 55%, transparent 75%)',
+            }}
+          />
+          <img
+          src="/images/profilee.png"
+          alt="Nazanin Ghobadi"
+          className="relative w-auto max-h-[220px] md:max-h-none md:w-full md:max-w-sm lg:max-w-md object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
+          />
+        </motion.div>
       </div>
     </section>
   )
